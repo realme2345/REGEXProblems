@@ -14,6 +14,7 @@ namespace RegularExpressionsPracticeProblem
             RegularExpressions regularExpressions = new RegularExpressions();//creating an object for a class
             regularExpressions.ValidateFirstName("Raja");
             regularExpressions.ValidateLastName("Kongara");
+            regularExpressions.ValidateEmailAddress("kongara.raja8@gmail.com");
         }
     }
 }
