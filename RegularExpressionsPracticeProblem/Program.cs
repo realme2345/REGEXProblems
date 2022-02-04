@@ -11,6 +11,8 @@ namespace RegularExpressionsPracticeProblem
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to the REGEX Problems");
+            RegularExpressions regularExpressions = new RegularExpressions();
+            regularExpressions.ValidateFirstName("Raja");
         }
     }
 }
