@@ -26,6 +26,8 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+
+
         //Validating The LastName
         public static string LastName = "^[A-Z][A-Z a-z]{3,}$";// pattern used for checking as per use case
         public void ValidateLastName(string lastName) // this method is used for validating last name
@@ -42,6 +44,8 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+
+
         // Validating Email
         public static string EmailAddress = @"^([A-Za-z0-9]*\.[A-Za-z0-9]*)@([A-Za-z0-9]*)((\.(\w){2,3})+)$";
         public void ValidateEmailAddress(string email)//-Validating the EmailAddres
@@ -58,6 +62,8 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+
+
         // Validating Mobile Number
         public static string MobileNum = @"^([\+][0-9]{2}\s*[0-9]{10})$";
         public void ValidateMobileNum(string mobile) // this method used for the validating Mobile Number
@@ -73,6 +79,8 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+
+
         // Validating Password
         public static string Password = @"^[A-Za-z0-9]{8,}$";
         public void ValidatePassWord(string password) // this method used for the validating password
@@ -88,6 +96,8 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+
+
         // Validating Password with one Upper case
         public static string UpperCase = @"^(?=.*[A-Z])[A-Za-z0-9]{8,}$";
         public void ValidateUpperCase(string password) // this method used for the validating password atleast one upper acase
@@ -103,10 +113,31 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
-        public static string NumaricaNumber = @"^(?=.*[0-9])[a-zA-Z0-9]{8,}*$";
+
+
+        // Validating password with one numeric values
+        public static string NumaricaNumber = @"^(?=.*[0-9])[a-zA-Z0-9]{8,}$";
         public void ValidateNumericNumber(string password) // this method used for the validating password atleast one Numeric Number
         {
-            if (Regex.IsMatch(password, UpperCase))
+            if (Regex.IsMatch(password, NumaricaNumber))
+            {
+                Console.WriteLine("{0} is valid", password);
+                Console.WriteLine("Password :" + password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", password);
+            }
+            //The End
+        }
+
+
+
+        // validating the Password with special character
+        public static string SpecialChar = @"^(?=.*[@$!%*#?&])[a-zA-Z0-9@$!%*#?&]{8,}$";
+        public void ValidateSpecialChar(string password) // this method used for the validating password atleast one special char
+        {
+            if (Regex.IsMatch(password, SpecialChar))
             {
                 Console.WriteLine("{0} is valid", password);
                 Console.WriteLine("Password :" + password);
