@@ -103,5 +103,19 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+        public static string NumaricaNumber = @"^(?=.*[0-9])[a-zA-Z0-9]{8,}*$";
+        public void ValidateNumericNumber(string password) // this method used for the validating password atleast one Numeric Number
+        {
+            if (Regex.IsMatch(password, UpperCase))
+            {
+                Console.WriteLine("{0} is valid", password);
+                Console.WriteLine("Password :" + password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", password);
+            }
+            //The End
+        }
     }
 }

@@ -12,12 +12,13 @@ namespace RegularExpressionsPracticeProblem
         {
             Console.WriteLine("Welcome to the REGEX Problems");
             RegularExpressions regularExpressions = new RegularExpressions();//creating an object for a class
-            regularExpressions.ValidateFirstName("Raja");
-            regularExpressions.ValidateLastName("Kongara");
-            regularExpressions.ValidateEmailAddress("kongara.raja8@gmail.com");
-            regularExpressions.ValidateMobileNum("+91 8919807887");
-            regularExpressions.ValidatePassWord("raja1234");
-            regularExpressions.ValidateUpperCase("raJa1234");
+            //regularExpressions.ValidateFirstName("Raja");
+            //regularExpressions.ValidateLastName("Kongara");
+            //regularExpressions.ValidateEmailAddress("kongara.raja8@gmail.com");
+            //regularExpressions.ValidateMobileNum("+91 8919807887");
+            //regularExpressions.ValidatePassWord("raja1234");
+            regularExpressions.ValidateUpperCase("Rajakongara");
+            regularExpressions.ValidateNumericNumber("Rajakonagara143");
 
         }
     }
