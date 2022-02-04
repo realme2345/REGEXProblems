@@ -73,5 +73,20 @@ namespace RegularExpressionsPracticeProblem
             }
             //The End
         }
+        // Validating Password
+        public static string Password = @"^[A-Za-z0-9]{8,}$";
+        public void ValidatePassWord(string password) // this method used for the validating mobile number
+        {
+            if (Regex.IsMatch(password, Password))
+            {
+                Console.WriteLine("{0} is valid", password);
+                Console.WriteLine("Password :",password);
+            }
+            else
+            {
+                Console.WriteLine("{0} is not valid", password);
+            }
+            //The End
+        }
     }
 }
