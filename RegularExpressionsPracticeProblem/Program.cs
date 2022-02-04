@@ -15,6 +15,7 @@ namespace RegularExpressionsPracticeProblem
             regularExpressions.ValidateFirstName("Raja");
             regularExpressions.ValidateLastName("Kongara");
             regularExpressions.ValidateEmailAddress("kongara.raja8@gmail.com");
+            regularExpressions.ValidateMobileNum("+91 8919807887");
         }
     }
 }
